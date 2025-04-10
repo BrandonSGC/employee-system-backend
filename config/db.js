@@ -4,10 +4,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const conn = mysql2.createConnection({
-  host: process.env.HOSTNAME,
-  database: process.env.DATABASE,
-  user: process.env.USERNAME,
-  password: process.env.PASSWORD,
+  host: process.env.DB_HOSTNAME,
+  database: process.env.DB_DATABASE,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
   ssl: {
     rejectUnauthorized: true,
   },
